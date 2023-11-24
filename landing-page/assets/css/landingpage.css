@@ -82,3 +82,26 @@ h6 {
 .section {
     min-height: 100vh;
 }
+
+.menu {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-content nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-content nav ul li a {
+    text-decoration: none;
+}
