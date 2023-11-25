@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #CCB639;
     --white-color: #ffffff;
-    --light-color: #E8EE99;
+    --border-color: #EEEEEE;
+    --light-color: #831a38;
     --gap: 3rem;
 }
 
@@ -22,9 +22,11 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem; 
-    color: var(--primary-color);
 }
-    
+
+a {
+    text-decoration: none;
+}
 
 h1, h2, h3 ,h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
@@ -57,7 +59,7 @@ h6 {
 }
 
 .main-bg {
-    background-image: url("/landing-page/assets/img/radiant-gradient.svg");
+    background-image: url("/landing-page/assets/img/rose-petals.svg");
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
@@ -90,18 +92,52 @@ h6 {
     left: 0;
     right: 0;
     width: 100%;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .menu-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.menu-content nav ul li {
+.menu h1 {
+    font-size: 5rem;
+    padding: var(--gap);
+}
+
+.menu h1 a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+.menu ul {
+    display: flex;
     list-style: none;
     text-decoration: none;
 }
 
-.menu-content nav ul li a {
-    text-decoration: none;
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 3rem;
+    position: relative;
+}
+
+.menu ul li a::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 0;
+   height: 0.4rem;
+   background: var(--light-color);
+   transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
 }
