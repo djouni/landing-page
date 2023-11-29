@@ -28,3 +28,12 @@
 .menu-space {
     height: 121px;
 }
+
+.main-text-content {
+    max-width: 80rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
