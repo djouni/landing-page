@@ -46,6 +46,15 @@
 
 }
 
+.grid-content h2 {
+    margin-bottom: 1rem;
+}
+
+.grid-description {
+    padding-bottom: 5rem;
+}
+
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
