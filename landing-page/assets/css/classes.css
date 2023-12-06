@@ -102,3 +102,68 @@
     padding: var(--gap);
     
 }
+
+.contact-form {
+    grid-column: span 2;
+    
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-grid legend{
+    font-style: italic;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    flex: 1 1 320px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.form-group label {
+    display: block;
+    
+}
+
+.form-group textarea, .form-group input {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+    box-shadow: 1px 1px 5px black;
+}
+
+div .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    border-radius: 0.5rem;
+}
+
+.form-group button:hover {
+    border: 0.5rem solid var(--light-color);
+    color: var(--light-color);
+    background: var(--white-color);
+    border-radius: 0.9rem;
+}
+
+.form-group ::placeholder {
+    color: lightgray;
+}
