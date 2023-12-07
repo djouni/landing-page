@@ -139,6 +139,12 @@
     width: 100%;
     font-size: 3rem;
     box-shadow: 1px 1px 5px black;
+    outline: none;
+}
+
+.form-group textarea:focus, .form-group input:focus {
+    box-shadow: 1px 1px 5px black;
+    outline: none;
 }
 
 div .full-width {
